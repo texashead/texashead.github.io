@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+ 
+<title>Johnny Walker</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+
+<body>
+	<h1>My website hi</h1>
+First Name: <input id="first" type="text"/>
+Last Name: <input id="last" type="text" onkeypress="handleKeyPress(event)"/>
+
+<button type="button" onclick="nig()">Click Me</button>
+
+<p id="output"></p>
+
+<script>
+
+var first;
+var last;
+var output;
+
+function nig(){
+
+var input1 = document.getElementById("first").value;
+var input2 = document.getElementById("last").value;
+output = document.getElementById("output");
+
+output.innerHTML = input1 + " " + input2;
+
+}
+
+function handleKeyPress(e){
+ var key=e.keyCode || e.which;
+  if (key==13){
+     guess();
+  }
+  }
+
+</script>
+
+
+
+
+</body>
+
+</html>
